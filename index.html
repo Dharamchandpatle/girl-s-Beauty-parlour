@@ -1,0 +1,1214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl's Beauty Parlour Website </title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- --- Animation Cdn link ----  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- boxicone icon cdn  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="font-serif">    
+
+    <!-- home section  -->
+    <section class="Home-section" style="background-image: url(https://preview.colorlib.com/theme/kayelux/images/bg_1.jpg.webp);">
+       
+            <section class="bg-transparent dark:bg-transparent ">
+                <div class="max-w-6xl px-4 mx-auto" x-data="{open:false}">
+                    <nav class="flex items-center justify-between py-4"> 
+                        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-[0, 0, 0] hover:text-[#95adbe] "><span class="text-[#fe9901]">Dharam's</span> Dev</span>
+                      </a> 
+                      <ul class="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex ">
+                            <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--btn-bg-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Home</a>
+                            </li>
+                            <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">About us</a>
+                            </li>
+                            <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Features</a>
+                            </li>
+                            <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Blog </a>
+                            </li>
+                            <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Testimonials</a>
+                            </li>
+                        </ul>
+                        <div class="lg:hidden">
+                            <button
+                                class="flex items-center px-3 py-2 text-blue-200 border border-blue-200 rounded dark:text-gray-400 hover:text-blue-300 hover:border-blue-300 lg:hidden"
+                                @click="open =true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="hidden lg:flex">
+                            <a href="" class="mr-4 text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                            <a href="" class="mr-4 text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                </svg>
+                            </a>
+                            <a href="" class="mr-4 text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                    <!-- Mobile Sidebar -->
+                    <div class="fixed inset-0 w-full bg-gray-900 opacity-25 dark:bg-gray-400 lg:hidden"
+                        :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
+                    </div>
+                    <div class="absolute inset-0 z-10 h-screen p-3 text-gray-700 duration-500 transform shadow-md dark:bg-gray-800 bg-blue-50 w-80 lg:hidden lg:transform-none lg:relative"
+                        :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
+                        <div class="flex justify-between px-5 py-2">
+                            <a class="text-2xl font-bold dark:text-gray-300" href="#">Logo</a>
+                            <button class="rounded-md hover:text-blue-300 lg:hidden dark:text-gray-400" @click="open=false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="px-5 text-left mt-7">
+                            <li class="pb-3">
+                                <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-100">Home</a>
+                            </li>
+                            <li class="pb-3">
+                                <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">About us</a>
+                            </li>
+                            <li class="pb-3">
+                                <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Features</a>
+                            </li>
+                            <li class="pb-3">
+                                <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Blog </a>
+                            </li>
+                            <li class="pb-3">
+                                <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Testimonials</a>
+                            </li>
+                        </ul>
+                        <div class="border-t border-green-400 dark:border-gray-400 my-7"></div>
+                        <div class="flex items-center px-5 lg:hidden">
+                            <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </a>
+                            <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                </svg>
+                            </a>
+                            <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="py-20 pr-24 pt-[11rem] " data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+                <div class="max-w-6xl px-4 mx-auto md:px-0 font-poppins">
+                    <div class="flex flex-wrap items-center px-4">
+                        <div class="w-full px-4 mb-16 md:w-1/2 md:mb-0">
+                            <span
+                                class="inline-block mb-4 text-lg font-semibold leading-none text-red-500 capitalize dark:text-[var(--btn-bg-color)]">
+                                Spa & Beauty Center
+                            </span>
+                            <h2
+                                class="mb-6 text-5xl  leading-tight tracking-tight text-[var(--font-color)]  dark:text-[var(--font-color)]   md:text-5xl lg:text-7xl">
+                                Beauty & Spa Wellness.
+                            </h2>
+                            <p class="mb-6 font-medium tracking-wide text-[var(--para-color)] dark:text-[var(--para-color)] md:text-lg">
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                Success is most important part of life and it is determination of having achieved .
+                            </p>
+                            <a href="#"
+                                class="inline-flex uppercase items-center justify-center px-8 py-3 text-[var(--btn-bg-color)] bg-[#ffffff] shadow-md hover:shadow-lg rounded-md shadow hover:text-[var(--btn-bg-color)] hover:bg-[#ffffff] ">
+                                Make an Appointment</a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+        </div>
+    </section>
+
+<!-- About section  -->
+<section class="flex items-center py-10 bg-[var(--bg-color)] xl:h-screen font-poppins dark:bg[var(--bg-color)] ">
+    <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+        <div class="flex flex-wrap ">
+            <div class="w-full px-4 mb-10 lg:w-1/2  lg:mb-0" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="relative">
+                    <img src="https://preview.colorlib.com/theme/kayelux/images/about.jpg.webp" alt=""
+                        class="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded">
+                    <div
+                        class="absolute z-10 hidden w-full h-full bg-[#edcbbe] rounded-bl-[80px] rounded -bottom-6 right-6 lg:block">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 " data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div class="relative">
+                    <h1
+                        class="absolute -top-20   left-0 text-[20px] lg:text-[100px] text-gray-900 font-bold  dark:text-gray-200 opacity-5 md:block hidden">
+                        About Us
+                    </h1>
+                    <h1>Kayelux Beauty Salon</h1>
+                    <h1 class="pl-2 text-3xl border-l-8 border-[var(--btn-bg-color)] text-[var(--font-color)] md:text-5xl dark:text-[var(--font-color)]">
+                        Beauty Anywhere Anytime
+                    </h1>
+                </div>
+                <p class="mt-6 mb-10 text-base leading-7 text-[var(--para-color)] dark:text-[var(--para-color)]">
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. <br><br>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                </p>
+                <a href="#"
+                class="inline-flex uppercase items-center justify-center px-8 py-3 text-[var(--btn-bg-color)] bg-[#ffffff] shadow-md hover:shadow-lg rounded-md shadow hover:text-[var(--btn-bg-color)] hover:bg-[#ffffff] ">
+                OUR SERVICES </a> <br>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- our services  -->
+<section class="flex items-center justify-center bg-[var(--bg-color)] dark:bg-[var(--bg-color)]">
+    <div class="px-4 py-20 mx-auto max-w-7xl" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        <div class="max-w-xl mx-auto">
+            <h1 class="text-center dark:text-[var(--font-color)]">Browse Our Categories</h1>
+            <h1 class="mb-4 text-5xl text-center dark:text-[var(--font-color)]"> Our Beauty & Spa Services</h1>
+            <p class="mb-16 text-base text-center text-[var(--para-color)]">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 gap-x-4 gap-y-6 lg:gap-x-8 lg:gap-y-8 md:grid-cols-2 lg:grid-cols-3" >
+            <div
+                class="w-full p-8 mb-5 text-center transition-all bg-white rounded dark:bg-[var(--box-color)] shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <div class="inline-block p-4 mb-6 -mt-16  rounded-full">
+                   <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg.webp" alt="" class="h-20 w-20 rounded-full">
+                </div>
+                <h3 class="mb-4 text-3xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]"> Beauty Massage </h3>
+                <p class="text-base text-[var(--para-color)] dark:text-[var(--para-color)]">
+                    Far far away, behind the word mountains, far from the countries Vokalia.
+                </p>
+            </div>
+
+            <div
+                class="w-full p-8 mb-5 text-center transition-all bg-white rounded dark:bg-[var(--box-color)] shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <div class="inline-block p-4 mb-6 -mt-16  rounded-full">
+                    <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg.webp" alt="" class="h-20 w-20 rounded-full">
+                 </div>
+                 <h3 class="mb-4 text-3xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">Facial Therapy</h3>
+                 <p class="text-base text-[var(--para-color)] dark:text-[var(--para-color)]">
+                     Far far away, behind the word mountains, far from the countries Vokalia.
+                 </p>
+            </div>
+
+            <div
+                class="w-full p-8 mb-5 text-center transition-all bg-white rounded dark:bg-[var(--box-color)] shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <div class="inline-block p-4 mb-6 -mt-16  rounded-full">
+                    <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg.webp" alt="" class="h-20 w-20 rounded-full">
+                 </div>
+                 <h3 class="mb-4 text-3xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]"> Skin Care </h3>
+                 <p class="text-base text-[var(--para-color)] dark:text-[var(--para-color)]">
+                     Far far away, behind the word mountains, far from the countries Vokalia.
+                 </p>
+            </div>
+
+            <div
+                class="w-full p-8 mb-5 text-center transition-all bg-white rounded dark:bg-[var(--box-color)] shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <div class="inline-block p-4 mb-6 -mt-16  rounded-full">
+                   <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg.webp" alt="" class="h-20 w-20 rounded-full">
+                </div>
+                <h3 class="mb-4 text-3xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">Parlor & Beauty</h3>
+                <p class="text-base text-[var(--para-color)] dark:text-[var(--para-color)]">
+                    Far far away, behind the word mountains, far from the countries Vokalia.
+                </p>
+            </div>
+            <div
+                class="w-full p-8 mb-5 text-center transition-all bg-white rounded dark:bg-[var(--box-color)] shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <div class="inline-block p-4 mb-6 -mt-16  rounded-full">
+                    <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg.webp" alt="" class="h-20 w-20 rounded-full">
+                 </div>
+                 <h3 class="mb-4 text-3xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]"> 
+                    Eye Shadow </h3>
+                 <p class="text-base text-[var(--para-color)] dark:text-[var(--para-color)]">
+                     Far far away, behind the word mountains, far from the countries Vokalia.
+                 </p>
+            </div>
+            <div
+                class="w-full p-8 mb-5 text-center transition-all bg-white rounded dark:bg-[var(--box-color)] shadow-sm hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+                <div class="inline-block p-4 mb-6 -mt-16  rounded-full">
+                    <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg.webp" alt="" class="h-20 w-20 rounded-full">
+                 </div>
+                 <h3 class="mb-4 text-3xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]"> MakeUp</h3>
+                 <p class="text-base text-[var(--para-color)] dark:text-[var(--para-color)]">
+                     Far far away, behind the word mountains, far from the countries Vokalia.
+                 </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- image  -->
+<section class="img-section" style="background-image: url(https://preview.colorlib.com/theme/kayelux/images/bg_3.jpg.webp);"></section>
+
+<!-- Review Section  -->
+
+<div class=" bg-[var(--bg-color)]  py-6 sm:py-8 lg:py-12">
+    <div class="px-4 py-20 mx-auto max-w-7xl">
+      <div class="mb-10 md:mb-16">
+        <h1 class="text-center text-2xl  text-gray-800 md:mb-6 lg:text-xl">Meet Our Makeup Artist</h1>
+        <h2 class="mb-4 text-center text-2xl  text-gray-800 md:mb-6 lg:text-5xl">Our Expert Makeup & Beautician Artist</h2>
+  
+      </div>
+  
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+        <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96" data-aos="flip-right" data-aos-delay="100" data-aos-duration="2000">
+          <img src="https://preview.colorlib.com/theme/kayelux/images/staff-4.jpg.webp" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+  
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+  
+          <span class="relative mr-3 mb-3 inline-block rounded-lg border border-gray-500 px-2 py-1 text-xs text-gray-200 backdrop-blur md:px-3 md:text-sm"><span class=" font-bold text-[var(--btn-bg-color)]">BEAUTICIAN</span>
+           &nbsp; Kaye Bruce</span>
+        </a>
+  
+        <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96" data-aos="flip-right" data-aos-delay="100" data-aos-duration="2000">
+          <img src="https://preview.colorlib.com/theme/kayelux/images/staff-2.jpg.webp" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+  
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+  
+          <span class="relative mr-3 mb-3 inline-block rounded-lg border border-gray-500 px-2 py-1 text-xs text-gray-200 backdrop-blur md:px-3 md:text-sm"><span class=" font-bold text-[var(--btn-bg-color)]">BEAUTICIAN</span> &nbsp; Catherine Smith</span>
+        </a>
+  
+        <a href="#" class="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96" data-aos="flip-right" data-aos-delay="100" data-aos-duration="2000">
+          <img src="https://preview.colorlib.com/theme/kayelux/images/staff-1.jpg.webp" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+  
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+  
+          <span class="relative mr-3 mb-3 inline-block rounded-lg border border-gray-500 px-2 py-1 text-xs text-gray-200 backdrop-blur md:px-3 md:text-sm"><span class=" font-bold text-[var(--btn-bg-color)]">BEAUTICIAN</span> &nbsp; Lanie William</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section  -->
+
+  <section class="flex items-center bg-[#ffffff] lg:h-screen font-poppins dark:bg-[#ffffff]">
+    <div class="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-0 md:px-6 font-bold">
+        <p class="text-lg font-medium text-gray-500 mb-7 md:text-xl dark:text-[var(--btn-bg-color)]">
+            Our Price</p>
+        <h2 class="mb-4 text-3xl  text-gray-800 md:text-5xl dark:text-[var(--font-color)]">Get Our Package Pricing
+        </h2>
+      
+        <div class="flex flex-wrap justify-center -mx-3">
+            <div class="w-full px-3 mb-6 md:w-1/2 lg:w-1/3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div
+                    class="relative flex flex-col items-center px-8 py-8 shadow-md lg:rounded-3xl bg-[#ffffff] hover:bg-[var(--bg-color)]">
+                    <h2
+                        class="mb-4 text-xl font-semibold text-[var(--font-color)] border-b-4 border-[var(--btn-bg-color)] dark:border-[var(--btn-bg-color)]  lg:text-2xl dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                        Basic Plan 
+                    </h2>
+                    <div class="mb-4">
+                        <span
+                            class="relative text-3xl font-bold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] -top-20 right-1">$</span>
+                        <span class="font-bold text-[var(--font-color)] text-9xl dark:text-[var(--font-color)]">50</span>
+                    </div>
+                    <p class="mb-4 text-lg font-medium text-[var(--font-color)] md:text-xl dark:text-[var(--font-color)]">
+                        Lorem ipsum dor amet
+                    </p>
+                    <ul class="mb-4 lg:self-center">
+                        <li class="flex items-center mb-3 font-medium text-[var(--font-color)] dark:text-[var(--font-color)]">
+                            <a href="#" class="mr-2 ttext-[var(--font-color)] dark:text-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Makeup & Massage</span>
+                        </li>
+                        <li class="flex items-center mb-3 font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2 text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Facial</span>
+                        </li>
+                        <li class="flex items-center mb-3 font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Couple Massage</span>
+                        </li>
+                        <li class="flex items-center font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2 text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Pedicure</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="w-full px-3 mb-6 md:w-1/2 lg:w-1/3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div
+                    class="relative flex flex-col items-center px-8 py-8 shadow-md lg:rounded-3xl bg-[var(--box-color)]">
+                    <h2
+                        class="mb-4 text-xl font-semibold text-[var(--font-color)] border-b-4 border-[var(--btn-bg-color)] lg:text-2xl dark:border-[var(--btn-bg-color)]  dark:text-[var(--font-color)]">
+                        Couple Plan
+                    </h2>
+                    <div class="mb-4">
+                        <span
+                            class="relative text-3xl font-bold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] -top-20 right-1">$</span>
+                        <span class="font-bold text-[var(--font-color)] text-9xl dark:text-[var(--font-color)]">70</span>
+                    </div>
+                    <p class="mb-4 text-lg font-medium text-[var(--font-color)] md:text-xl dark:text-[var(--font-color)]">
+                        Lorem ipsum dor amet
+                    </p>
+                    <ul class="mb-4 lg:self-center">
+                        <li class="flex items-center mb-3 font-medium text-[var(--font-color)] dark:text-[var(--font-color)]">
+                            <a href="#" class="mr-2 ttext-[var(--font-color)] dark:text-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Makeup & Massage</span>
+                        </li>
+                        <li class="flex items-center mb-3 font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2 text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Facial</span>
+                        </li>
+                        <li class="flex items-center mb-3 font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Couple Massage</span>
+                        </li>
+                        <li class="flex items-center font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2 text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Pedicure</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="w-full px-3 mb-6 md:w-1/2 lg:w-1/3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div
+                    class="relative flex flex-col items-center px-8 py-8 shadow-md lg:rounded-3xl bg-[#ffffff] hover:bg-[var(--bg-color)]">
+                    <h2
+                        class="mb-4 text-xl font-semibold text-[var(--font-color)] border-b-4 border-pink-500 lg:text-2xl dark:text-[var(--font-color)] dark:border-[var(--btn-bg-color)]">
+                    Family Plan 
+                    </h2>
+                    <div class="mb-4">
+                        <span
+                            class="relative text-3xl font-bold text-blue-700 dark:text-[var(--btn-bg-color)] -top-20 right-1">$</span>
+                        <span class="font-bold text-[var(--font-color)] text-9xl dark:text-[var(--font-color)]">90</span>
+                    </div>
+                    <p class="mb-4 text-lg font-medium text-[var(--font-color)] md:text-xl dark:text-[var(--font-color)]">
+                        Lorem ipsum dor amet
+                    </p>
+                    <ul class="mb-4 lg:self-center">
+                        <li class="flex items-center mb-3 font-medium text-[var(--font-color)] dark:text-[var(--font-color)]">
+                            <a href="#" class="mr-2 ttext-[var(--font-color)] dark:text-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Makeup & Massage</span>
+                        </li>
+                        <li class="flex items-center mb-3 font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2 text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Facial</span>
+                        </li>
+                        <li class="flex items-center mb-3 font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Couple Massage</span>
+                        </li>
+                        <li class="flex items-center font-mediumtext-[var(--font-color)] darktext-[var(--font-color)]">
+                            <a href="#" class="mr-2 text-[var(--font-color)] darktext-[var(--font-color)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                </svg>
+                            </a>
+                            <span>Pedicure</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- crousal Section  -->
+<div class="relative w-full flex gap-4 py-6 overflow-x-auto">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/kayelux/images/gallery-4.jpg" alt="Image 1">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/kayelux/images/gallery-3.jpg" alt="Image 2">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/kayelux/images/gallery-2.jpg.webp" alt="Image 3">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/kayelux/images/gallery-1.jpg" alt="Image 4">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://preview.colorlib.com/theme/kayelux/images/gallery-4.jpg" alt="Image 5">
+</div>
+
+<!-- contact Section  -->
+
+<div class="relative flex items-center justify-center w-full h-screen bg-center bg-cover"
+style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/bg_2.jpg.webp);">
+<div class="absolute top-0 bottom-0 left-0 right-0 bg-gray-900 opacity-75"></div>
+<form action="" class="z-10 p-6 mx-2 rounded-md lg:mx-0 dark:bg-[var(--bg-color)] bg-[var(--bg-color)]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+    <div class="mb-6">
+        <h2 class="text-4xl font-bold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)]">
+            Contact Us </h2>
+    </div>
+    <div class="flex flex-wrap mb-4 -mx-2">
+        <div class="w-full px-2 mb-4 lg:mb-0 lg:w-1/2">
+            <input
+                class="w-full px-3 py-2 leading-loose border border-[var(--btn-bg-color)] rounded-md dark:placeholder-gray-500 bg-[var(--bg-color)] dark:text-gray-400 dark:bg-[var(--bg-color)] dark:border-[var(--btn-bg-color)]"
+                type="text" placeholder="First Name.." required="">
+        </div>
+        <div class="w-full px-2 lg:w-1/2">
+            <input
+                class="w-full px-3 py-2 leading-loose border rounded-md dark:placeholder-gray-500bg-[var(--bg-color)]  dark:text-gray-400 dark:bg-[var(--bg-color)]  dark:border-[var(--btn-bg-color)]"
+                type="text" placeholder="Last Name.." required="">
+        </div>
+    </div>
+    <input type="text" placeholder="I'm asking information for..." required
+        class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 border roundedbg-[var(--bg-color)]  dark:placeholder-gray-500 dark:text-gray-400 dark:border-[var(--btn-bg-color)] dark:bg-[var(--bg-color)]  ">
+    <input
+        class="w-full px-3 py-2 mb-4 leading-loose border rounded-md dark:placeholder-gray-500bg-[var(--bg-color)]  dark:text-gray-400 dark:bg-[var(--bg-color)]  dark:border-[var(--btn-bg-color)]"
+        type="email" placeholder="abc@gmail.com" required="">
+    <textarea rows="4" type="message" placeholder="Write a message..." required=""
+        class="block w-full px-4 mb-4 leading-tight text-gray-700 border roundedbg-[var(--bg-color)]  dark:placeholder-gray-500 py-7 dark:text-gray-400 dark:border-[var(--btn-bg-color)] dark:bg-[var(--bg-color)]  "></textarea>
+    <button
+        class="w-full py-4 text-sm font-bold leading-normal text-[var(--btn-bg-color)] transition-all duration-300 bg-[#ffffff] rounded-md dark:bg-[#ffffff] shadow-sm hover:shadow-lg">
+        Send Message
+    </button>
+</form>
+</div>
+  
+
+<!-- costumer say's section  -->
+
+<section class=" bg-[var(--box-color)]  py-14 font-poppins dark:bg-[var(--box-color)]">
+    <div class="max-w-6xl px-4 py-6 mx-auto lg:py-4 md:px-6">
+        <div class="max-w-xl mx-auto">
+            <div class="text-center ">
+                <div class="relative flex flex-col items-center">
+                    <h1 class="text-2xl font-bold dark:text-[var(--btn-bg-color)]"> Customer <span class="text-[var(--font-color)]"> Reviews
+                        </span> </h1>
+                   
+                </div>
+                <p class="mb-12 text-5xl text-center text-[var(--font-color)]">
+                    What Customers Saying.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 ">
+            <div class="py-6 bg-white rounded-md shadow dark:bg-[#ffffff]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div
+                    class="flex flex-wrap items-center justify-between pb-4 mb-6 space-x-2 border-b dark:border-gray-700">
+                    <div class="flex items-center px-6 mb-2 md:mb-0 ">
+                        <div class="flex mr-2 rounded-full">
+                            <img src="https://i.postimg.cc/rF6G0Dh9/pexels-emmy-e-2381069.jpg" alt=""
+                                class="object-cover w-12 h-12 rounded-full">
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)]">
+                                Adren Roy</h2>
+                            <p class="text-xs text-gray-500 dark:text-gray-800">Web Designer</p>
+                        </div>
+                    </div>
+                    <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-800"> Joined 12, SEP , 2022
+                    </p>
+                </div>
+                <p class="px-6 mb-6 text-base text-gray-700 dark:text-gray-700">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+                </p>
+                <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
+                    <div class="flex px-6 mb-2 md:mb-0">
+                        <ul class="flex items-center justify-start mr-4">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="text-sm text-gray-700 dark:text-gray-700">Rating:<span
+                                class="font-semibold text-gray-700 dark:text-gray-700">
+                                3.0</span>
+                        </h2>
+                    </div>
+                    <div
+                        class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        <div class="flex items-center">
+                            <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-hand-thumbs-up-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <span>12</span>
+                            </div>
+                            <div class="flex text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#" class="inline-flex hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-chat"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
+                                        </path>
+                                    </svg>Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-6 bg-white rounded-md shadow dark:bg-[#ffffff]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <div
+                    class="flex flex-wrap items-center justify-between pb-4 mb-6 space-x-2 border-b dark:border-gray-700">
+                    <div class="flex items-center px-6 mb-2 md:mb-0 ">
+                        <div class="flex mr-2 rounded-full">
+                            <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-4.jpg" alt=""
+                                class="object-cover w-12 h-12 rounded-full">
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)]">
+                                James jack</h2>
+                            <p class="text-xs text-gray-500 dark:text-gray-800">Grafics Designer</p>
+                        </div>
+                    </div>
+                    <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-800"> Joined 12, SEP , 2022
+                    </p>
+                </div>
+                <p class="px-6 mb-6 text-base text-gray-700 dark:text-gray-700">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+                </p>
+                <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
+                    <div class="flex px-6 mb-2 md:mb-0">
+                        <ul class="flex items-center justify-start mr-4">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="text-sm text-gray-700 dark:text-gray-700">Rating:<span
+                                class="font-semibold text-gray-700 dark:text-gray-700">
+                                3.0</span>
+                        </h2>
+                    </div>
+                    <div
+                        class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        <div class="flex items-center">
+                            <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-hand-thumbs-up-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <span>12</span>
+                            </div>
+                            <div class="flex text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#" class="inline-flex hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-chat"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
+                                        </path>
+                                    </svg>Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-6 bg-white rounded-md shadow dark:bg-[#ffffff]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+                <div
+                    class="flex flex-wrap items-center justify-between pb-4 mb-6 space-x-2 border-b dark:border-gray-700">
+                    <div class="flex items-center px-6 mb-2 md:mb-0 ">
+                        <div class="flex mr-2 rounded-full">
+                            <img src="https://preview.colorlib.com/theme/kayelux/images/gallery-4.jpg" alt=""
+                                class="object-cover w-12 h-12 rounded-full">
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)]">
+                                Adren Roy</h2>
+                            <p class="text-xs text-gray-500 dark:text-gray-800">Beautycian</p>
+                        </div>
+                    </div>
+                    <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-800"> Joined 12, SEP , 2022
+                    </p>
+                </div>
+                <p class="px-6 mb-6 text-base text-gray-700 dark:text-gray-700">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+                </p>
+                <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
+                    <div class="flex px-6 mb-2 md:mb-0">
+                        <ul class="flex items-center justify-start mr-4">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="text-sm text-gray-700 dark:text-gray-700">Rating:<span
+                                class="font-semibold text-gray-700 dark:text-gray-700">
+                                3.0</span>
+                        </h2>
+                    </div>
+                    <div
+                        class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        <div class="flex items-center">
+                            <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-hand-thumbs-up-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <span>12</span>
+                            </div>
+                            <div class="flex text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#" class="inline-flex hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-chat"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
+                                        </path>
+                                    </svg>Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-6 bg-white rounded-md shadow dark:bg-[#ffffff]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+                <div
+                    class="flex flex-wrap items-center justify-between pb-4 mb-6 space-x-2 border-b dark:border-gray-700">
+                    <div class="flex items-center px-6 mb-2 md:mb-0 ">
+                        <div class="flex mr-2 rounded-full">
+                            <img src="https://i.postimg.cc/rF6G0Dh9/pexels-emmy-e-2381069.jpg" alt=""
+                                class="object-cover w-12 h-12 rounded-full">
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)]">
+                                Wiliam selli </h2>
+                            <p class="text-xs text-gray-500 dark:text-gray-800">Web Designer</p>
+                        </div>
+                    </div>
+                    <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-800"> Joined 12, SEP , 2022
+                    </p>
+                </div>
+                <p class="px-6 mb-6 text-base text-gray-700 dark:text-gray-700">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+                </p>
+                <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
+                    <div class="flex px-6 mb-2 md:mb-0">
+                        <ul class="flex items-center justify-start mr-4">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 mr-1 text-[var(--btn-bg-color)] dark:text-[var(--btn-bg-color)] bi bi-star-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="text-sm text-gray-700 dark:text-gray-700">Rating:<span
+                                class="font-semibold text-gray-700 dark:text-gray-700">
+                                3.0</span>
+                        </h2>
+                    </div>
+                    <div
+                        class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        <div class="flex items-center">
+                            <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor"
+                                        class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-hand-thumbs-up-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <span>12</span>
+                            </div>
+                            <div class="flex text-sm text-gray-700 dark:text-gray-400">
+                                <a href="#" class="inline-flex hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="w-4 h-4 mr-1 text-[var(--btn-bg-color)] bi bi-chat"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
+                                        </path>
+                                    </svg>Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer Section  -->
+<footer class="bg-white pt-4 sm:pt-6 lg:pt-8" style="background-image: url(https://preview.colorlib.com/theme/kayelux/images/bg_3.jpg.webp); object-fit: cover;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="flex flex-col items-center justify-between gap-2 border-b border-t py-6 md:flex-row">
+        <div class="mb-3 text-center md:mb-0 md:text-left">
+          <span class="font-bold uppercase tracking-widest text-gray-800">Beauty Parlour </span>
+          <p class="text-gray-500">Please Come In Girl's Beauty Parlour </p>
+        </div>
+  
+        <form class="flex w-full gap-2 md:max-w-md">
+          <input placeholder="Email" class="w-full flex-1 rounded border bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+  
+          <button class="inline-block rounded bg-[var(--btn-bg-color)] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[var(--btn-bg-color)] focus-visible:ring active:bg-[var(--btn-bg-color)] md:text-base">Send</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="pt-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
+          <div class="col-span-full lg:col-span-2">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-[0, 0, 0] hover:text-[#95adbe] "><span class="text-[#fe9901]">Dharam's</span> Dev</span>
+           
+  
+            <p class="mb-6 text-gray-500 sm:pr-8">Filler text is dummy text which has no meaning however looks very similar to real text</p>
+  
+            <!-- social - start -->
+            <div class="flex gap-4">
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+            <!-- social - end -->
+          </div>
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">Products</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Overview</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Solutions</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Pricing</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Customers</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">Company</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Investor Relations</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Jobs</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Press</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">Support</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Documentation</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Chat</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-800">Legal</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms of Service</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Cookie settings</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+        </div>
+  
+        <div class="border-t py-8 text-center text-sm text-gray-400">© 2024 - Present Dharamchand Patle . All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Animation Script  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000,
+      });
+    </script>
+</body>
+</html>
